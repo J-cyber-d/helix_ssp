@@ -1,0 +1,20 @@
+.title{
+color: #0033A0;
+font-size:  20px;
+font-weight: 700;
+margin-left: 40px;
+line-height: 19px;
+letter-spacing: 0.09em;
+}
+.title-2{
+color: #009A44;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+}
+.border-primary {
+    --bs-border-opacity: 1;
+    border-color: rgb(0, 51, 160) !important;
+  }
