@@ -19,7 +19,7 @@ import { height } from "@mui/system";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tableau from "../assets/img/Vector2.png";
 import Breadcrumb from "../components/breadcrumb";
-
+import { Link } from 'react-router-dom';
 export default function TilePage() {
   return (
     <div>
@@ -74,10 +74,13 @@ export default function TilePage() {
             </Grid>
             <Grid item xs={5}>
               <Item className="text-end">
-                <Button variant="contained" color="success">
+                <nav>
+                {/* <Button variant="contained" color="success"> */}
                   <AddIcon />
-                  <label className="font">Add New</label>
-                </Button>
+                   <Link to="/addtile">Add New</Link>
+                  {/* <label className="font">Add New</label> */}
+                {/* </Button> */}
+                </nav>
               </Item>
             </Grid>
           </Grid>
