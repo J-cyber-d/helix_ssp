@@ -106,7 +106,9 @@ export default function TilePage() {
             </Grid>
             <Grid item xs={4}>
               <Item>
-                <CardUi />
+                <nav>
+                <Link to="/edittile"><CardUi /></Link>
+                </nav>
               </Item>
             </Grid>
             <Grid item xs={4}>
