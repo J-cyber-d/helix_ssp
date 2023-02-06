@@ -34,11 +34,17 @@ function Breadcrumb(props) {
     //   </div>
     // </div>
     <Breadcrumbs aria-label="breadcrumb">
+           <Link underline="hover" color="inherit">
+             <label className="font">Home</label>
+           </Link>
     <Link color="inherit" component={RouterLink} to="/">
-      Home
+      Tile
     </Link>
     <Link color="inherit" component={RouterLink} to="/addtile">
       Add
+    </Link>
+    <Link color="inherit" component={RouterLink} to="/edittile">
+      Edit
     </Link>
   </Breadcrumbs>
   );

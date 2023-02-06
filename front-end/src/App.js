@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<TilePage />} />
         <Route path="/addtile" element={<AddItem />} />
+        <Route path="/edittile" element={<EditItem />} />
       </Routes>
     </div>
   );
