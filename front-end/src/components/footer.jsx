@@ -7,7 +7,7 @@ import { Typography } from "@mui/material";
 export default function Footer() {
   return (
     <react-fragment>
-      <footer className="footer" style={{ width: "100%" }}>
+      <footer className="footer">
         <div>
           <label className="label-1">
             <span>&#169;</span>2021 Bon Secours Mercy Health

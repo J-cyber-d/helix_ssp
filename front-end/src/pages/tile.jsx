@@ -3,9 +3,6 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import { Col, Container, Row } from "react-bootstrap";
 import { Box } from "@mui/material";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
@@ -21,12 +18,9 @@ import "../styles/tile.css";
 import { height } from "@mui/system";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tableau from "../assets/img/Vector2.png";
+import Breadcrumb from "../components/breadcrumb";
 
 export default function TilePage() {
-  function handleClick(event) {
-    event.preventDefault();
-    console.info("You clicked a breadcrumb.");
-  }
   return (
     <div>
       <Header />
@@ -35,23 +29,7 @@ export default function TilePage() {
           <Grid container spacing={2} sx={{ maxWidth: 1200 }}>
             <Grid item xs={12}>
               <Item>
-                <div role="presentation" onClick={handleClick}>
-                  <Breadcrumbs aria-label="breadcrumb" className="font">
-                    <Link underline="hover" color="inherit" href="/">
-                      <label className="font">Home</label>
-                    </Link>
-                    <Link
-                      underline="hover"
-                      color="inherit"
-                      href="/material-ui/getting-started/installation/"
-                    >
-                      <label className="font">Tiles</label>
-                    </Link>
-                    <Typography color="text.primary">
-                      <label className="font">Add</label>
-                    </Typography>
-                  </Breadcrumbs>
-                </div>
+                <Breadcrumb />
               </Item>
             </Grid>
             <Grid item xs={6}>
@@ -120,21 +98,6 @@ export default function TilePage() {
             <Grid item xs={4}>
               <Item>
                 <CardUi image="Tableau" />
-              </Item>
-            </Grid>
-            <Grid item xs={4}>
-              <Item>
-                <CardUi />
-              </Item>
-            </Grid>
-            <Grid item xs={4}>
-              <Item>
-                <CardUi />
-              </Item>
-            </Grid>
-            <Grid item xs={4}>
-              <Item>
-                <CardUi />
               </Item>
             </Grid>
             <Grid item xs={4}>

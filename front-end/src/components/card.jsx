@@ -13,7 +13,7 @@ import Image1 from "../assets/img/h2o.jpeg";
 import "../styles/card.css";
 import { margin } from "@mui/system";
 
-export default function CardUi() {
+export default function CardUi(props) {
   const theme = useTheme();
 
   return (
@@ -31,7 +31,7 @@ export default function CardUi() {
             marginTop: "8px",
           }}
           component="img"
-          image={Image1}
+          image={props.image}
           alt="Live from space album cover"
           className="border rounded-1 border-4 border-green"
         />
