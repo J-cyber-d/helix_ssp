@@ -4,49 +4,34 @@ import Link from "@mui/material/Link";
 //import { Link } from 'react-router-dom';
 import Typography from "@mui/material/Typography";
 import "../styles/tile.css";
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from "react-router-dom";
 //import { withRouter } from "react-router-dom";
 function Breadcrumb(props) {
   console.log(props);
   return (
-    // <div>
-    //   <div role="presentation">
-    //     <Breadcrumbs aria-label="breadcrumb" className="font">
-    //       <Link underline="hover" color="inherit">
-    //         <label className="font">Home</label>
-    //       </Link>
-    //       <Link
-    //         underline="hover"
-    //         color="inherit"
-    //       >
-    //         <label className="font">Tiles</label>
-    //       </Link>
-    //       <Link
-    //       underline="hover"
-    //       color="inherit"
-    //     >
-    //        <label className="font">Add</label>
-    //     </Link>
-    //       <Typography color="text.primary">
-    //         <label className="font">Add</label>
-    //       </Typography>
-    //     </Breadcrumbs>
-    //   </div>
-    // </div>
-    <Breadcrumbs aria-label="breadcrumb">
-    <Link color="inherit" component={RouterLink} to="/">
-      Home
-    </Link>
-    <Link color="inherit" component={RouterLink} to="/addtile">
-      Add
-    </Link>
-  </Breadcrumbs>
+    <div>
+      <div role="presentation">
+        <Breadcrumbs aria-label="breadcrumb" className="font">
+          <Link underline="hover" color="inherit">
+            <label className="font">Home</label>
+          </Link>
+          <Link underline="hover" color="inherit" component={RouterLink} to="/">
+            <label className="font">Tiles</label>
+          </Link>
+          <Link
+            underline="hover"
+            color="inherit"
+            component={RouterLink}
+            to="/addtile"
+          >
+            <label className="font">Add</label>
+          </Link>
+        </Breadcrumbs>
+      </div>
+    </div>
   );
 }
 export default Breadcrumb;
-
-
-
 
 // import React from "react";
 // import Breadcrumbs from "@mui/material/Breadcrumbs";
