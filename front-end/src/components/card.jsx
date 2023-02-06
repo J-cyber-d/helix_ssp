@@ -31,7 +31,7 @@ export default function CardUi(props) {
             marginTop: "8px",
           }}
           component="img"
-          image={props.image}
+          image={Image1}
           alt="Live from space album cover"
           className="border rounded-1 border-4 border-green"
         />
