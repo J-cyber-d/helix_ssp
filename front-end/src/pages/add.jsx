@@ -14,7 +14,7 @@ export default function add() {
       <Container>
         <Box style={{ marginTop: "30px", marginBottom: "20px" }}>
           <Breadcrumb />
-          <MainCard />
+          <MainCard label="Add Item" />
         </Box>
       </Container>
       <Footer />

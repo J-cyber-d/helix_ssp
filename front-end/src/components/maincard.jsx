@@ -11,7 +11,7 @@ import Item from "@mui/material/Grid";
 import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 
-export default function maincard() {
+export default function maincard(props) {
   return (
     <Box
       sx={{
@@ -22,7 +22,7 @@ export default function maincard() {
         <CardHeader
           title={
             <Button variant="contained" color="success">
-              <label className="font-3">Add New</label>
+              <label className="font-3">{props.label}</label>
             </Button>
           }
           style={{ marginTop: "7px", marginLeft: "25cm" }}
